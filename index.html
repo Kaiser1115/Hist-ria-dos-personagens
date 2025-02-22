@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias Lengend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Escolha seu personagem</h1>
+    <div class="container">
+        <img  onclick="contarHistoriaMago()" src="imagens/PATOLINO.webp" alt="imagem do mago">
+        <img  onclick="contarHistoriaJogador()" src="imagens/isagi.webp" alt="imagem do imperador">
+    </div>
+    <p id="historia"></p>
+
+    <script>
+        function contarHistoriaMago() {
+            document.getElementById("historia").innerHTML = "Patolino o Mago é uma história do pato Patolino, um personagem dos Looney Tunes, que se transforma em um mago no mundo dos sonhos. ";
+        }
+        function contarHistoriaJogador() {
+            document.getElementById("historia").innerHTML = "A história de Isagi, o protagonista do anime Blue Lock, gira em torno de sua adaptação, que faz os jogadores ao seu redor despertarem o seus egos.Um garoto que pretende se tornar o maior atacante do mundo e ganhar a Copa do Mundo com seu país"
+        }
+
+    </script>
+</body>
+</html>
